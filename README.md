@@ -39,8 +39,7 @@ model.WAFProduct.events.restrict = function(e){
 }
 ```
 
-i.e. Execute the restring query of the derived 1 class,
-and create a restricted collection by following the relation.
+i.e. Execute the restring query on the extended 1 class and create a restricted collection by following the relation path.
 
 But this is **WRONG**!!!
 
