@@ -26,4 +26,4 @@ Instructions
 Advanced
 --------
 
-![](https://github.com/miyako/wak-tutorial-2014-12-12/blob/master/images/NG.png)
+![](/blob/master/images/NG.png)
