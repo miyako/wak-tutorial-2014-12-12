@@ -41,7 +41,7 @@ i.e. Execute the restring query on the extended 1 class and create a restricted 
 
 But this is **WRONG**!!!
 
-In Wakanda, you can add a relatedEntities attribute to an extended class, but NOT a "relatedEntity" attribute, which needs to store the primary key of its related 1. In effect, it is a kind of a storage attribute. As such, the relatedEntity attribute must exist on the original class.
+In Wakanda, you can add a relatedEntities attribute to an extended class, but NOT a "relatedEntity" attribute, which needs to store the primary key of its related 1. In effect, it is a kind of a storage attribute. As such, the relatedEntities attribute must exist on the original class.
 
 ![](https://github.com/miyako/wak-tutorial-2014-12-12/blob/master/images/OK.png)
 
