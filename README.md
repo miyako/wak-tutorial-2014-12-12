@@ -31,7 +31,7 @@ You might concider creating a relatedEntities attribute on the extended "1" clas
 
 The restricting query of the derived N class will look like this:
 
-```
+```js
 model.WAFProduct.events.restrict = function(e){
 	return ds.WAFUser.products;
 }
