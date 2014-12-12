@@ -46,7 +46,7 @@ In Wakanda, you can add a relatedEntities attribute to an extended class, but NO
 ![](https://github.com/miyako/wak-tutorial-2014-12-12/blob/master/images/OK.png)
 
 * Before:
-```
+```js
 model.WAFProduct.user = new Attribute('relatedEntity', 
 'WAFUser', 
 'WAFUser', 
@@ -55,7 +55,7 @@ model.WAFProduct.user = new Attribute('relatedEntity',
 });
 ```
 * After:
-```
+```js
 model.Product.user = new Attribute('relatedEntity', 
 'WAFUser', 
 'WAFUser', 
@@ -68,7 +68,7 @@ model.Product.user = new Attribute('relatedEntity',
 ---
 If you decide to work with the original classes, on the server side, keep in mind that the data type of the foreign key is an extended class (WAFUser), which means you can't assign it's original class to create a related entity.
 
-```
+```js
 var product = new ds.Product();
 
 product.user = ds.User(1);//WRONG!!! data type is not User
@@ -78,7 +78,7 @@ product.user = ds.User(1).id;//GOOD
 ---
 It is good practice to update the page after login, and clear the cache after logout.
 
-```
+```js
 login1.logout = function login1_logout (event)
 {
   sources.user.all();
