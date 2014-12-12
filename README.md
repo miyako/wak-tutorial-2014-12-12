@@ -78,7 +78,7 @@ product.user = ds.WAFUser(1);//WRONG!!! the restricting query will apply
 product.user = ds.User(1).id;//GOOD
 ```
 ---
-It is good practice to update the page after login, and clear it after logout.
+It is good practice to update the page after login, and clear the cache after logout.
 
 ```
 login1.logout = function login1_logout (event)
