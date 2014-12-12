@@ -22,3 +22,9 @@ Instructions
 8. Confirm that only the user's data is visible.
 9. Logout
 10. Confirm that no data is visible
+
+Advanced
+--------
+
+
+[](https://github.com/miyako/wak-tutorial-2014-12-12/master/images.NG.png)
