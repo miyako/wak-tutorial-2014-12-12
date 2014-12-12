@@ -1,0 +1,1 @@
+﻿include('./Model/WAFUser/WAFUser.js', 'relative');include('./Model/WAFProduct/WAFProduct.js', 'relative');

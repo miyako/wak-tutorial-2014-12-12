@@ -1,0 +1,1 @@
+﻿include('../Product/Product.js', 'relative');model.WAFProduct = new DataClass('WAFProducts', 'public', 'Product');model.Product.user = new Attribute('relatedEntity', 'WAFUser', 'WAFUser', {	'scope':'public'});include('WAFProduct-events.js', 'relative');
