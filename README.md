@@ -26,4 +26,4 @@ Instructions
 Advanced
 --------
 
-![](/blob/master/images/NG.png)
+![](./blob/master/images/NG.png)
