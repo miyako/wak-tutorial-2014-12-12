@@ -67,7 +67,8 @@ model.Product.user = new Attribute('relatedEntity',
 ```
 **Note**: This is a link from a "publicOnServer" class to a "public" class, but it is OK,  because the relatedEntity (Product.user) atrribute is "public", which means it is inherited by the derived class (WAFProduct.user).
 
-**More**: If you decide to work with the original classes, on the server side, keep in mind that the data type of the foreign key is an extended class (WAFUser), which means you can't assign it's original class to create a related entity.
+---
+If you decide to work with the original classes, on the server side, keep in mind that the data type of the foreign key is an extended class (WAFUser), which means you can't assign it's original class to create a related entity.
 
 ```
 var product = new ds.Product();
@@ -75,4 +76,19 @@ var product = new ds.Product();
 product.user = ds.User(1);//WRONG!!! data type is not User
 product.user = ds.WAFUser(1);//WRONG!!! the restricting query will apply
 product.user = ds.User(1).id;//GOOD
+```
+---
+It is useful to add some codes to the login widget, to update the page immediately after login, and clear it after logout.
+
+```
+login1.logout = function login1_logout (event)
+{
+  sources.user.all();
+};
+
+login1.login = function login1_login (event)
+{
+  ds.WAFProduct.clearCache();
+  sources.user.all();
+};
 ```
