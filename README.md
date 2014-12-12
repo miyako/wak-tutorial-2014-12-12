@@ -48,7 +48,7 @@ In Wakanda, you can add a relatedEntities attribute to an extended class, but NO
 
 ![](https://github.com/miyako/wak-tutorial-2014-12-12/blob/master/images/OK.png)
 
-* before:
+* Before:
 ```
 model.WAFProduct.user = new Attribute('relatedEntity', 
 'WAFUser', 
@@ -57,7 +57,7 @@ model.WAFProduct.user = new Attribute('relatedEntity',
 	'scope':'public'
 });
 ```
-* after:
+* After:
 ```
 model.Product.user = new Attribute('relatedEntity', 
 'WAFUser', 
