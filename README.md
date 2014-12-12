@@ -74,6 +74,6 @@ model.Product.user = new Attribute('relatedEntity',
 var product = new ds.Product();
 
 product.user = ds.User(1);//WRONG!!! data type is not User
-product.user = ds.WAFUser(1);//WRONG!!! the restrinting query will apply
+product.user = ds.WAFUser(1);//WRONG!!! the restricting query will apply
 product.user = ds.User(1).id;//GOOD
 ```
