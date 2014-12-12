@@ -25,8 +25,6 @@ Instructions
 
 Advanced
 --------
-**Relations and extended data class
-
 You might concider creating a relatedEntities attribute on the extended "1" class, which links to a relatedEntity attribute on the the extended "N" class.
 
 ![](https://github.com/miyako/wak-tutorial-2014-12-12/blob/master/images/NG.png)
