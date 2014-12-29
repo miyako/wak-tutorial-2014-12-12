@@ -1,1 +1,1 @@
-﻿model.WAFUser.events.restrict = function(e){	return ds.WAFUser.query('name === :1', currentUser().name);}
+﻿model.WAFUser.events.restrict = function(e){	return ds.WAFUser.query('name === :$userID');//currentUser().name}
