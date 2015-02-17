@@ -12,3 +12,6 @@ SAMPLE/SAMPLE Solution/sessionID.json
 *.waSym
 
 *.Match
+
+SAMPLE/SAMPLE/DataFolder/*
+SAMPLE/SAMPLE/Logs/HTTPServer.waLog
